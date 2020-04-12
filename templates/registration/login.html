@@ -1,0 +1,109 @@
+{% extends 'base.html'%}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body"> 
+            <h1 class="text-center">Log in</h1>
+            <form action="" method="POST" novalidate>
+                {% csrf_token %}
+                {{ form|crispy }}
+            <button type="submit" class="btn btn-primary">Log in</button>
+            <a href="{% url 'password_reset' %}" class="btn btn-link">Forgot your password?</a>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <style>
+            </style>
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <div class="col-md-4"></div>
+           <div class="col-md-4">
+            <form action="#" method="POST" 
+            oninput='password2.setCustomValidity(Password.value != password2.value ? "Passwords do not match." : "")'>
+                
+                {% csrf_token %}
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" placeholder="Name" name='FullName' required >
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" placeholder="Email" name='Email' required>
+                <label for="Password">Password</label>
+                <input type="password" class="form-control" placeholder="Password" name='Password' required>
+                <label for="password2">Confirm Password</label>
+                <input type="password" class="form-control" placeholder="Confirm Password" name="password2" required >
+                   
+                <button class="btn btn-success">Submit</button> 
+            </form>
+           </div>
+           <div class="col-md-4"></div>
+       </div>
+   </div>
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html> -->
